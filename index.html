@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina Jorginho Car</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+    body{background:#f5f5f5;color:#222;line-height:1.6;}
+    header{background:#111;color:#fff;padding:15px 50px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;}
+    header img{height:50px;border-radius:10px;}
+    nav ul{display:flex;gap:20px;list-style:none;}
+    nav a{color:#fff;text-decoration:none;font-weight:500;transition:.3s;}
+    nav a:hover{color:#00aaff;}
+    .hero{
+      position:relative;
+      background:url('src/motor2.jpg') center/cover no-repeat;
+      height:80vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      text-align:center;
+      color:#fff;
+      padding:20px;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.55);
+    }
+    .hero *{position:relative;}
+    .hero h1{font-size:2.5rem;max-width:800px;}
+    .hero p{max-width:700px;margin:20px auto;font-size:1.1rem;}
+    .hero a{display:inline-block;margin-top:15px;padding:12px 30px;background:#007bff;color:#fff;text-decoration:none;border-radius:30px;transition:.3s;}
+    .hero a:hover{background:#0056b3;}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:60px 10%;background:#fff;}
+    .service-card{text-align:center;padding:25px;border-radius:10px;background:#f9f9f9;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:.3s;}
+    .service-card:hover{transform:translateY(-5px);}
+    .service-card i{font-size:3rem;color:#007bff;margin-bottom:15px;}
+    .service-card h3{margin-bottom:10px;}
+    .info{display:flex;flex-wrap:wrap;justify-content:space-around;padding:50px 10%;background:#111;color:#fff;}
+    .info div{margin:15px;flex:1;min-width:200px;}
+    .info h4{margin-bottom:10px;color:#00aaff;}
+    footer{background:#000;color:#aaa;text-align:center;padding:20px;}
+    footer p{margin:0;}
+    @media(max-width:768px){
+      header{flex-direction:column;}
+      nav ul{flex-wrap:wrap;justify-content:center;}
+      .hero h1{font-size:2rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="src/jcar.jpg" alt="Logo Jorginho Car">
+    <nav>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <h1>Cuidados especializados para garantir seu conforto e segurança na estrada.</h1>
+    <p>Na nossa oficina mecânica, seu carro recebe atenção de especialistas para garantir desempenho, conforto e segurança. Confie em nossa equipe para serviços rápidos e de alta qualidade.</p>
+    <a href="#contato">Conheça-nos</a>
+  </section>
+
+  <section class="services" id="servicos">
+    <div class="service-card">
+      <i class="fas fa-car-side"></i>
+      <h3>Manutenção Automotiva</h3>
+      <p>Cuidamos da manutenção completa do seu veículo, garantindo durabilidade e desempenho com excelência.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-warehouse"></i>
+      <h3>Local de Qualidade</h3>
+      <p>Nosso compromisso é oferecer um espaço seguro e bem equipado para cuidar de cada detalhe do seu carro.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-clipboard-check"></i>
+      <h3>Serviços de Alta Qualidade</h3>
+      <p>Equipe especializada, comprometida com precisão e eficiência para sua tranquilidade.</p>
+    </div>
+  </section>
+
+  <section class="info" id="contato">
+    <div>
+      <h4>Localização</h4>
+      <p>Rua Leovigildo Reis, 214<br>Alagoinhas – BA, 48009-156</p>
+    </div>
+    <div>
+      <h4>Horários</h4>
+      <p>Segunda a Sexta-feira<br>08h às 12h | 14h às 18h</p>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p><i class="fab fa-whatsapp"></i> (75) 9 9123-0076<br>
+      <i class="fas fa-envelope"></i> jorginhocaroficial@gmail.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Oficina Jorginho Car – Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
